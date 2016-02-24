@@ -2,4 +2,4 @@
 
 ## 极客公园兴趣学习小组教程
 
-*****powered by tech @ geekpark.net**
+**powered by tech @ geekpark.net**
