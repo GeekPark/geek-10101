@@ -25,12 +25,12 @@ cd geek-10101
 #### 目录结构可能是这样的：
 
 * README.md
-* lesson1
+* lesson001
   * README.md
   * index.html
   * style.css
   * main.js
-* lesson2
+* lesson002
   * README.md
   * index.html
   * js
@@ -43,6 +43,6 @@ _关于项目文件更具体的使用说明，参考各章节内容。_
 
 ## 章节目录
 
-1. [第一章](lesson1) - 概念介绍，工具列表，hello world 程序
+1. [第一章](lesson001) - 概念介绍，工具列表，hello world 程序
 
 *powered by tech @ geekpark.net*
