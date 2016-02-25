@@ -45,4 +45,8 @@ _关于项目文件更具体的使用说明，参考各章节内容。_
 
 1. [第一章](lesson001) - 概念介绍，工具列表，hello world 程序
 
+**TODO**
+
+前几章入门的内容将按[这篇教程](http://blog.csdn.net/dofy/article/details/6824793)进行，内容略作调整。
+
 *powered by tech @ geekpark.net*
