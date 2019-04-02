@@ -1,0 +1,126 @@
+<pre id="debug"></pre>
+<script>
+// if
+var a = 0;
+var b = 0;
+if(a) {
+    console.log('a');
+} else if(b) {
+    console.log('b');
+} else {
+    console.log('c');
+}
+
+// for
+for(var i = 0; i < 15; i++) {
+    // break;
+    if(i == 10) {
+        break;
+    }
+    // continue
+    if(i == 3) {
+        continue;
+    }
+    // do something
+    console.log('i = ' + i);
+}
+
+// while
+// var i = 10;
+while(i > 0) {
+    i--;
+    // break;
+    if(i == 2) {
+        break;
+    }
+    // continue
+    if(i == 7) {
+        continue;
+    }
+    // do something
+    console.log('i =', i);
+}
+
+// switch
+var animal = 'cat';
+switch(animal) {
+    case 'cat':
+        console.log('I am a 🐱');
+        break;
+    case 'dog':
+        console.log('🐶 woof~~');
+        break;
+    case 'person':
+    default:
+        console.log('I am not an animal 🙂️')
+        break;
+}
+
+// function
+function func1() {
+    console.log('...');
+}
+
+function func2(str) {
+    console.log('str is', str);
+}
+
+var func3 = function(...args) {
+    console.log(args, func5());
+    console.log('args.length = ', args.length);
+}
+
+var func4 = new Function('return 3;');
+
+function func5() {
+    return 4;
+}
+
+func1();
+func2('some texts');
+func3(1, 2, func4());
+document.getElementById('debug').innerHTML = '// ' + func4();
+document.getElementById('debug').innerHTML += '\n';
+document.getElementById('debug').innerHTML += func5;
+
+// object
+var obj1 = {
+    key0: 'value 0',
+    key1: 'value 1',
+    key2: 'value 2',
+    key3: 'value 3'
+}
+
+console.log('obj1.key0 is:', obj1.key0);
+for(var n = 1; n <= 3; n++) {
+    console.log('obj1.key' + n + ' is: ' + obj1['key' + n]);
+}
+
+// class
+function Cat(name) {
+    this.name = name;
+
+    this.getMyName = function() {
+        return this.name;
+    }
+
+    this.say = function() {
+        return 'Miao~~';
+    }
+}
+
+var mimi = new Cat('MiMi');
+console.log('mimi.name is', mimi.getMyName());
+console.log('mimi.say()', mimi.say());
+
+var x = {
+    name: 'X-Man'
+};
+
+var name  = 'Global Name';
+
+console.log(mimi.getMyName.call(x));
+console.log(mimi.getMyName.call(this));
+console.log(mimi.getMyName.call(null));
+</script>
+
